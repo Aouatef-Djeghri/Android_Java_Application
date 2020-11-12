@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.addisonElliott:RippleDrawable:3.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2d1038c2973a17380eb29edd60296b7b/jetified-RippleDrawable-3.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2d1038c2973a17380eb29edd60296b7b/jetified-RippleDrawable-3.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2d1038c2973a17380eb29edd60296b7b/jetified-RippleDrawable-3.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.addisonelliott/RippleDrawable/3.0.0/15fb87e400619c0a020f280c04563d8ca811e9c2/RippleDrawable-3.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

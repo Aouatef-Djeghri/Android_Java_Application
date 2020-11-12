@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.pushbots:pushbots-lib:3.3.4@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/081a15c036fbf3e9612c54079b1d3cbd/jetified-pushbots-lib-3.3.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/081a15c036fbf3e9612c54079b1d3cbd/jetified-pushbots-lib-3.3.4/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/081a15c036fbf3e9612c54079b1d3cbd/jetified-pushbots-lib-3.3.4/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
