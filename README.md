@@ -10,11 +10,11 @@ Most of the design is inspired from freelancer application.
 
 # Screenshots of the application
 
-![Screenshot](link)
-![Screenshot](link)
-![Screenshot](link)
-![Screenshot](link)
-![Screenshot](link)
+![Screenshot](https://github.com/Aouatef-Djeghri/Android_Java_Application/blob/main/servicePro%20screenshots/login%20%26%20signUp.png)
+![Screenshot](https://github.com/Aouatef-Djeghri/Android_Java_Application/blob/main/servicePro%20screenshots/addCategory%20%26%20selectType.png)
+![Screenshot](https://github.com/Aouatef-Djeghri/Android_Java_Application/blob/main/servicePro%20screenshots/searchWork%20%26%20WorkDetails.png)
+![Screenshot](https://github.com/Aouatef-Djeghri/Android_Java_Application/blob/main/servicePro%20screenshots/AssignmentsCleint%20%26%20AssignmentsArtisan.png)
+![Screenshot](https://github.com/Aouatef-Djeghri/Android_Java_Application/blob/main/servicePro%20screenshots/Edit%20Profile%20%26%20UpdateServices.png)
 
 
 
