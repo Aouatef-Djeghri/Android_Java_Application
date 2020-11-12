@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1008710716776",
+    "firebase_url": "https://servicebypronotifs.firebaseio.com",
+    "project_id": "servicebypronotifs",
+    "storage_bucket": "servicebypronotifs.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008710716776:android:ee3c240b57cfd84d0b9add",
+        "android_client_info": {
+          "package_name": "com.example.servicebypro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": ""
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

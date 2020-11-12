@@ -1,0 +1,173 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply from: "$project.rootDir/tools/script-lint.gradle"
+
+android {
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    compileSdkVersion 30
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.example.servicebypro"
+        minSdkVersion 26
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        manifestPlaceholders = [
+                pushbots_app_id               : "",
+                pushbots_loglevel             : "DEBUG",
+                google_sender_id              : ""
+        ]
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        lintConfig file("$project.rootDir/tools/rules-lint.xml")
+        htmlOutput file("$project.buildDir/outputs/lint/lint.html")
+        warningsAsErrors true
+        xmlReport false
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.github.kinkoi:materialsearchview:1.4.0'
+    implementation 'com.thoughtbot:expandablerecyclerview:1.4'
+
+
+
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //Material Design (toolbars)
+    implementation 'com.google.android.material:material:1.2.1'
+
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    implementation 'androidx.navigation:navigation-fragment:2.3.1'
+    implementation 'androidx.navigation:navigation-ui:2.3.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.okhttp3:okhttp:4.8.1'
+
+    //Recyclerview
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+
+    //Retrofit and GSON
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
+
+    //RxJava
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.7'
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    // Glide
+    def glideVersion = '4.11.0'
+    implementation "com.github.bumptech.glide:glide:$glideVersion"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glideVersion"
+
+
+
+    //circle imageview
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+
+    // Room
+    def room_version = '2.2.5'
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+    androidTestImplementation "androidx.room:room-testing:$room_version"
+
+    // Lifecycle components // View model and LiveData
+    def lifecycle_version = '2.2.0'
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+
+
+    // Testing
+    androidTestImplementation 'androidx.arch.core:core-testing:2.1.0'
+
+    //for debuging , in logcat
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.8.1'
+
+    //OTP PIN View Design
+    implementation 'com.chaos.view:pinview:1.4.3'
+
+
+    //SegmentedButton
+    implementation 'com.github.addisonelliott:SegmentedButton:3.1.9'
+
+
+
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+    //Glide for images
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+
+    //common lang library
+   // implementation 'org.apache.commons:commons-lang3:3.11'
+    implementation 'org.apache.commons:commons-io:1.3.2'
+
+    //Custom Toast
+    implementation 'com.github.GrenderG:Toasty:1.4.2'
+
+
+    //Material Stepper
+    implementation 'com.stepstone.stepper:material-stepper:4.3.1'
+
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.11.2'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.11.2'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.11.2'
+
+    //google map places
+    implementation 'com.google.android.libraries.places:places:2.4.0'
+
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.1.0'
+    implementation 'com.google.android.libraries.places:places:2.4.0'
+   // implementation 'com.google.maps.android:android-maps-utils:2.0.3'
+    implementation 'com.github.mancj:MaterialSearchBar:0.8.5'
+    implementation 'com.skyfishjy.ripplebackground:library:1.0.1'
+    implementation 'com.jakewharton.threetenabp:threetenabp:1.2.4'
+
+
+    implementation 'com.thoughtbot:expandablerecyclerview:1.4'
+    implementation 'com.github.iammert:ExpandableLayout:1.4.1'
+
+    implementation 'com.github.jd-alexander:library:1.1.0'
+
+
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+
+
+
+    //pushNotifications
+    implementation 'com.google.firebase:firebase-messaging:21.0.0'
+    implementation 'com.pushbots:pushbots-lib:3.3.4@aar'
+}

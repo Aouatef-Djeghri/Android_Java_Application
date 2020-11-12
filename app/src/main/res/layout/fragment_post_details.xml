@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Activities.Dashboard.Add.Post2DetailsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:id="@+id/details_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="50"
+                android:gravity="left"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="Job title"
+                android:textColor="@color/searchBarBackIconTintColor"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/work_title_char_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="50"
+                android:gravity="right"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="0/50"
+                android:textColor="@color/mygray"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="left"
+            android:orientation="vertical">
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/work_title"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textColorHint="@color/mygray"
+                app:boxBackgroundMode="outline"
+                app:endIconMode="none"
+                app:hintEnabled="false"
+                app:boxStrokeColor="@color/my_light_gray"
+                app:boxStrokeWidthFocused="2dp"
+                app:boxBackgroundColor="@color/my_light_gray">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="E.g. I need a designer for my wall..."
+                    android:inputType="text|textVisiblePassword"
+                    android:lines="1"
+                    android:maxLength="55"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/mygray"
+                    android:textCursorDrawable="@null" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="50"
+                android:gravity="left"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="Job description"
+                android:textColor="@color/searchBarBackIconTintColor"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/work_description_char_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="50"
+                android:gravity="right"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="0/500"
+                android:textColor="@color/mygray"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/work_description"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textColorHint="@color/mygray"
+                app:boxBackgroundMode="outline"
+                app:endIconMode="none"
+                app:hintEnabled="false"
+                app:boxStrokeColor="@color/my_light_gray"
+                app:boxStrokeWidthFocused="2dp"
+                app:boxBackgroundColor="@color/my_light_gray">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Tell us more about what you need e.g i need someone
+to paint my house walls, "
+                    android:inputType="textMultiLine|textVisiblePassword"
+                    android:lines="1"
+                    android:maxLength="500"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/mygray"
+                    android:textCursorDrawable="@null" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="50"
+                android:gravity="left"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="Add attachments"
+                android:textColor="@color/searchBarBackIconTintColor"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="50"
+                android:gravity="right"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="Optional"
+                android:textColor="@color/mygray"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/select_file_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/my_gray2_border"
+                    android:gravity="center"
+                    android:src="@drawable/ic_baseline_add_24"
+                    android:contentDescription="@string/ImageView"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="50"
+                    android:gravity="left"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="Add file"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="50"
+                    android:gravity="right"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="Max file size 20 MB"
+                    android:textColor="@color/mygray2"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/separation_line_files_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="50"
+                    android:background="@android:color/black"
+                    android:gravity="center"
+                    android:text="Max file size 20 MB"
+                    android:textColor="@color/my_light_gray" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/display_first_selected_file"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image_one"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/my_gray2_border"
+                    android:gravity="center"
+                    android:src="@drawable/ic_baseline_add_24"
+                    android:contentDescription="@string/ImageView"
+                    />
+
+                <TextView
+                    android:id="@+id/first_image_path"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="50"
+                    android:gravity="left"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="Add file"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:ellipsize="end"
+                    android:maxLines="1"/>
+
+
+                <ImageView
+                    android:id="@+id/delete_image_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="5"
+                    android:gravity="right"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/ic_delete"
+                    android:contentDescription="@string/ImageView"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/separation_line_files_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="50"
+                    android:background="@android:color/black"
+                    android:gravity="center"
+                    android:text="Max file size 20 MB"
+                    android:textColor="@color/my_light_gray" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/display_second_selected_file"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image_two"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/my_gray2_border"
+                    android:gravity="center"
+                    android:src="@drawable/ic_baseline_add_24"
+                    android:contentDescription="@string/ImageView"
+                    />
+
+                <TextView
+                    android:id="@+id/second_image_path"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="50"
+                    android:gravity="left"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="Add file"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:ellipsize="end"
+                    android:maxLines="1"/>
+
+                <ImageView
+                    android:id="@+id/delete_image_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="5"
+                    android:gravity="right"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/ic_delete"
+                    android:contentDescription="@string/ImageView"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/separation_line_files_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="50"
+                    android:background="@android:color/black"
+                    android:gravity="center"
+                    android:text="Max file size 20 MB"
+                    android:textColor="@color/my_light_gray" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/display_third_selected_file"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image_three"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/my_gray2_border"
+                    android:gravity="center"
+                    android:src="@drawable/ic_baseline_add_24"
+                    android:contentDescription="@string/ImageView"
+                    />
+
+                <TextView
+                    android:id="@+id/third_image_path"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="50"
+                    android:gravity="left"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="Add file"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:ellipsize="end"
+                    android:maxLines="1"/>
+
+
+                <ImageView
+                    android:id="@+id/delete_image_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="5"
+                    android:gravity="right"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/ic_delete"
+                    android:contentDescription="@string/ImageView"
+                    />
+
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

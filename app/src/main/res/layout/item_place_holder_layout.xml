@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:background="@color/white"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="0dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/text_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:background="@color/place_holder_gb"
+                android:text="Title title"
+                android:textColor="#00000000"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_status"
+                android:layout_marginBottom="1dp"
+                android:background="@color/place_holder_gb"
+                android:text="Descripion Descripion"
+                android:textColor="#00000000"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/text_something"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_description"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="1dp"
+                android:background="@color/place_holder_gb"
+                android:text="this is a something text this is a something text"
+                android:textSize="12sp"
+                android:textColor="#00000000" />
+
+            <LinearLayout
+                android:id="@+id/text_image_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_something">
+
+                <ImageView
+                    android:id="@+id/text_image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/place_holder_gb"
+                    android:contentDescription="@string/ImageView" />
+
+                <TextView
+                    android:id="@+id/text_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:background="@color/place_holder_gb"
+                    android:gravity="center"
+                    android:text="Name. A"
+                    android:textColor="#00000000"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:layout_alignBottom="@id/text_image_name"
+                android:layout_alignParentRight="true"
+                android:background="@color/place_holder_gb"
+                android:paddingLeft="10dp"
+                android:text="&#8943;"
+                android:textColor="#00000000" />
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

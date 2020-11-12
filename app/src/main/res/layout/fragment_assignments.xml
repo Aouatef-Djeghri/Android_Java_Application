@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Activities.Dashboard.Assignments.AssignmentsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:text="My jobs"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_first_switch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:background="@drawable/round_corner_toggle"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout_title">
+
+            <com.addisonelliott.segmentedbutton.SegmentedButtonGroup
+                android:id="@+id/sbg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/my_light_gray"
+                android:gravity="center"
+                app:position="0"
+                app:radius="3dp"
+                app:ripple="true"
+                app:rippleColor="#00000000"
+                app:selectedBackground="@color/white"
+                app:selectedBorderColor="@color/my_light_blue"
+                app:selectedBorderWidth="1dp"
+                app:selectedButtonRadius="2dp">
+
+                <com.addisonelliott.segmentedbutton.SegmentedButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:padding="6dp"
+                    app:selectedTextColor="@color/myblue"
+                    app:text="As Client"
+                    app:textColor="@color/mygray"
+                    app:textStyle="bold" />
+
+                <com.addisonelliott.segmentedbutton.SegmentedButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:padding="6dp"
+                    app:selectedTextColor="@color/myblue"
+                    app:text="As Artisan"
+                    app:textColor="@color/mygray"
+                    app:textStyle="bold" />
+
+            </com.addisonelliott.segmentedbutton.SegmentedButtonGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_options"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:background="@color/my_light_gray"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout_first_switch"
+
+            >
+
+            <com.addisonelliott.segmentedbutton.SegmentedButtonGroup
+                android:id="@+id/sbg_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/my_light_gray"
+                app:draggable="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout_first_switch"
+                app:position="0"
+                app:radius="30dp"
+                app:ripple="true"
+                app:rippleColor="#00000000"
+                app:selectedBackground="@color/my_light_blue"
+                app:selectedButtonRadius="25dp"
+
+                >
+
+                <com.addisonelliott.segmentedbutton.SegmentedButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    app:selectedTextColor="@color/myblue"
+                    app:text="All"
+                    app:textColor="@color/mygray"
+                    app:textStyle="bold" />
+
+                <com.addisonelliott.segmentedbutton.SegmentedButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    app:selectedTextColor="@color/myblue"
+                    app:text="Open"
+                    app:textColor="@color/mygray"
+                    app:textStyle="bold" />
+
+
+                <com.addisonelliott.segmentedbutton.SegmentedButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    app:selectedTextColor="@color/myblue"
+                    app:text="In Progress"
+                    app:textColor="@color/mygray"
+                    app:textStyle="bold" />
+
+                <com.addisonelliott.segmentedbutton.SegmentedButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    app:selectedTextColor="@color/myblue"
+                    app:text="Past"
+                    app:textColor="@color/mygray"
+                    app:textStyle="bold" />
+
+
+            </com.addisonelliott.segmentedbutton.SegmentedButtonGroup>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/my_light_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_options">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/my_light_gray" />
+
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer_view_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:shimmer_duration="1200">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/item_place_holder_layout" />
+
+                    <include layout="@layout/item_place_holder_layout" />
+
+                    <include layout="@layout/item_place_holder_layout" />
+
+                    <include layout="@layout/item_place_holder_layout" />
+                </LinearLayout>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+            <LinearLayout
+                android:id="@+id/data_not_available"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/data_not_available_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:contentDescription="@string/ImageView"
+                    />
+
+                <TextView
+                    android:id="@+id/data_not_available_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_description"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/mygray" />
+
+                <Button
+                    android:id="@+id/data_not_available_Button"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/inputlinearLayout"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="@drawable/round_corner_toggle_my_blue"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

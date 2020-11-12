@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="4dp"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/reviewer_image"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp"
+            android:src="@drawable/ic_user"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/reviewer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amjad General Store"
+            android:layout_toRightOf="@id/reviewer_image"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:lineHeight="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/reviewer_image" />
+
+        <RatingBar
+            android:id="@+id/review_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_below="@id/reviewer_name"
+            android:layout_toRightOf="@id/reviewer_image"
+            android:layout_marginLeft="10dp"
+            android:progressTint="@color/quantum_yellow"
+            android:secondaryProgressTint="@android:color/transparent"
+            android:rating="4"/>
+
+        <TextView
+            android:id="@+id/review_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Review Title"
+            android:layout_below="@id/review_rating"
+            android:layout_toRightOf="@id/reviewer_image"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="12dp"
+            android:textColor="@color/mygray"
+            android:paddingTop="5dp"/>
+
+        <TextView
+            android:id="@+id/review_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Review Title"
+            android:layout_below="@id/review_service"
+            android:layout_toRightOf="@id/reviewer_image"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/review_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="asbkd asudhlasn saudnas s"
+            android:layout_below="@id/review_title"
+            android:layout_toRightOf="@id/reviewer_image"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

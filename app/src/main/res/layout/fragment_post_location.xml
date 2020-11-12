@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Activities.Dashboard.Add.Post3LoactionFragment">
+
+
+    <LinearLayout
+        android:id="@+id/location_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.mancj.materialsearchbar.MaterialSearchBar
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:mt_borderlessRippleEnabled="true"
+            app:mt_hint="Search a place"
+            app:mt_maxSuggestionsCount="10"
+            app:mt_navIconEnabled="true"
+            app:mt_placeholder="Search a place"
+            app:mt_speechMode="false"
+            android:layout_gravity="center"
+            app:mt_hintColor="@color/mygray"
+            app:mt_searchIconTint="@color/mygray"
+            app:mt_navIconTint="@color/mygray"
+/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+
+            <com.google.android.gms.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+
+            <com.skyfishjy.library.RippleBackground
+                android:id="@+id/ripple_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:rb_color="#0099CC"
+                app:rb_duration="3000"
+                app:rb_radius="32dp"
+                app:rb_rippleAmount="4"
+                app:rb_scale="6">
+
+                <ImageView
+                    android:id="@+id/my_location_marker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_marker"
+                    android:translationY="-18dp"
+                    android:contentDescription="@string/ImageView"/>
+            </com.skyfishjy.library.RippleBackground>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
