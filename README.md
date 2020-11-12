@@ -10,25 +10,12 @@ Most of the design is inspired from freelancer application.
 
 # Screenshots of the application
 
-![Screenshot](https://github.com/Aouatef-Djeghri/Android_Java_Application/blob/main/servicePro%20screenshots/login.png)
+![Screenshot](link)
+![Screenshot](link)
+![Screenshot](link)
+![Screenshot](link)
+![Screenshot](link)
 
-![Screenshot](https://github.com/Aouatef-Djeghri/Android_Java_Application/blob/main/servicePro%20screenshots/sigup.jpg)
-
-![Screenshot](https://github.com/Aouatef-Djeghri/Android_Java_Application/blob/main/servicePro%20screenshots/Add%20Fragment.jpg)
-
-![Screenshot](https://github.com/Aouatef-Djeghri/Android_Java_Application/blob/main/servicePro%20screenshots/select%20work%20type.jpg)
-
-![Screenshot](https://github.com/Aouatef-Djeghri/Android_Java_Application/blob/main/servicePro%20screenshots/search.jpg)
-
-![Screenshot](https://github.com/Aouatef-Djeghri/Android_Java_Application/blob/main/servicePro%20screenshots/Asseignments%20Fragment%20Artisan.jpg)
-
-![Screenshot](https://github.com/Aouatef-Djeghri/Android_Java_Application/blob/main/servicePro%20screenshots/Asseignments%20Fragment%20Client.jpg)
-
-![Screenshot](https://github.com/Aouatef-Djeghri/Android_Java_Application/blob/main/servicePro%20screenshots/work%20details.jpg)
-
-![Screenshot](https://github.com/Aouatef-Djeghri/Android_Java_Application/blob/main/servicePro%20screenshots/Edit%20Profile.png)
-
-![Screenshot](https://github.com/Aouatef-Djeghri/Android_Java_Application/blob/main/servicePro%20screenshots/Profile.jpg)
 
 
 
