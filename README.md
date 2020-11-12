@@ -6,3 +6,9 @@ This app is developed for android devices using java as a programming language, 
 
 *Disclaimer
 Most of the design is inspired from freelancer application. 
+
+
+# Screenshots of the application
+
+![Screenshot](screenshot.png)
+
