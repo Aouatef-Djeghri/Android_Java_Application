@@ -18,9 +18,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5658c5f4-6a9b-4e5b-93f7-5f49455da2eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tools/script-lint.gradle" afterDir="false" />
-    </list>
+    <list default="true" id="5658c5f4-6a9b-4e5b-93f7-5f49455da2eb" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
