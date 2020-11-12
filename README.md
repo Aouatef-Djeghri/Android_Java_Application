@@ -10,5 +10,5 @@ Most of the design is inspired from freelancer application.
 
 # Screenshots of the application
 
-![Screenshot](screenshot.png)
+![Screenshot](https://github.com/Aouatef-Djeghri/Android_Java_Application/blob/main/servicePro%20screenshots/Add%20Fragment.jpg)
 
