@@ -5,7 +5,11 @@ ServicePro is a on-demand services mobile app based on the idea of Freelancer ap
 This app is developed for android devices using  <b>java</b> as a programming language, <b>retrofit2</b> as a  <b>Rest API client</b>,  <b>MVVM</b> for the architectural pattern and the database used is  <b>MySQL</b>.
 Some of the design is inspired from freelancer application. 
 
-[![Watch the video]](https://drive.google.com/file/d/1Jds65FblfZRsXYC_Mcp49fYatHG9Ixfk/view?usp=sharing)
+[[Video I]](https://drive.google.com/file/d/1Jds65FblfZRsXYC_Mcp49fYatHG9Ixfk/view?usp=sharing)
+
+[[Video I]](https://drive.google.com/file/d/1I1wTpk99iI-G-UkGbLgRl_nWHSVct3eu/view?usp=sharing)
+
+[[Video I]](https://drive.google.com/file/d/1CPQ1WF7EBusAA2n32Kyj6NgeaRoImPAE/view?usp=sharing)
 
 # Screenshots of the application
 
