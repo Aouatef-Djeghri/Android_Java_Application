@@ -7,9 +7,9 @@ Some of the design is inspired from freelancer application.
 
 [[Video I]](https://drive.google.com/file/d/1Jds65FblfZRsXYC_Mcp49fYatHG9Ixfk/view?usp=sharing)
 
-[[Video I]](https://drive.google.com/file/d/1I1wTpk99iI-G-UkGbLgRl_nWHSVct3eu/view?usp=sharing)
+[[Video II]](https://drive.google.com/file/d/1I1wTpk99iI-G-UkGbLgRl_nWHSVct3eu/view?usp=sharing)
 
-[[Video I]](https://drive.google.com/file/d/1CPQ1WF7EBusAA2n32Kyj6NgeaRoImPAE/view?usp=sharing)
+[[Video III]](https://drive.google.com/file/d/1CPQ1WF7EBusAA2n32Kyj6NgeaRoImPAE/view?usp=sharing)
 
 # Screenshots of the application
 
